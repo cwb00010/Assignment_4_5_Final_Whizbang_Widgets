@@ -1,6 +1,6 @@
 # Assignment_4_Whizbang_Widgets
 
-## Application Pages
+## Application Pages/API's
 
 ### 1. Add A Seed (`spInsertSeed`)
 
