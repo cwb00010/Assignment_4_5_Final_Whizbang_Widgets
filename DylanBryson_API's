@@ -1,0 +1,89 @@
+using System;
+using System.Data.SqlClient;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+
+namespace YourName.Controllers
+{
+    public class HurricaneController : ApiController
+    {
+        [HttpPost]
+        public HttpResponse InsertHurricane(int hurricaneID, string hurricaneName)
+        {
+            try
+            {
+                
+                string connectionString = "YourConnectionString";
+
+                
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    
+                    connection.Open();
+
+                    
+                    SqlCommand command = SqlCommand("InsertHurricane", connection);
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    
+                    command.Parameters.AddWithValue("@HurricaneID", hurricaneID);
+                    command.Parameters.AddWithValue("@HurricaneName", hurricaneName);
+
+                    
+                    command.ExecuteNonQuery();
+                }
+
+              
+                return Request.CreateResponse(HttpStatusCode.OK, "Hurricane inserted successfully");
+            }
+            catch (Exception ex)
+            {
+                
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        using System;
+using System.Data.SqlClient;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+
+namespace YourName.Controllers
+{
+    public class TornadoController : ApiController
+    {
+        [HttpPost]
+        public HttpResponseMessage InsertTornado(int tornadoID, int tornadoCategory)
+        {
+            try
+            {
+                
+                string connectionString = "YourConnectionString";
+
+                
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    
+                    connection.Open();
+
+                   
+                    SqlCommand command = new SqlCommand("InsertTornado", connection);
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    
+                    command.Parameters.AddWithValue("@TornadoID", tornadoID);
+                    command.Parameters.AddWithValue("@TornadoCategory", tornadoCategory);
+
+                    
+                    command.ExecuteNonQuery();
+                }
+
+                
+                return Request.CreateResponse(HttpStatusCode.OK, "Tornado inserted successfully");
+            }
+            catch (Exception ex)
+            {
+                
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        
