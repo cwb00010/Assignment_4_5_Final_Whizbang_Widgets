@@ -1,0 +1,6 @@
+@FarmMaxSiteAPI_HostAddress = http://localhost:5263
+
+GET {{FarmMaxSiteAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
