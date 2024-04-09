@@ -4,7 +4,7 @@ using FarmMaxSiteAPI.Repositiories;
 
 namespace FarmMaxSiteAPI.Controllers
 {
-    [Route("api[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class InsertSeedController : ControllerBase
     {
@@ -19,10 +19,10 @@ namespace FarmMaxSiteAPI.Controllers
             var insertID = await _InsertID.InsertID(SeedID);
             return insertID;
 
+        }
 
-            {
         private readonly ISeedService _InsertName;
-        public InsertSeedController(ISeedService InsertName)
+        public InsertNameController(ISeedService InsertName)
         {
             _InsertName = InsertName;
         }
@@ -33,11 +33,17 @@ namespace FarmMaxSiteAPI.Controllers
             return seed;
         }
 
-        [HttpPost]("{IdealTemp}"]
-        private static async Task<ActionResult<string>> InsertIdealTemp(string IdealTemp)
+        private readonly ISeedService _InsertIdealTemp;
+        public InsertIdealTempController(ISeedService InsertName)
         {
-            var insertName = await IdealTemp.InsertIdealTemp(IdealTemp);
-            return insertName;
+            _InsertIdealTemp = InsertIdealTemp;
+
+            [HttpPost("{IdealTemp}")]
+            public static async Task<ActionResult<Seed>> InsertIdealTemp(string IdealTemp)
+            {
+                var IdealTemp = await _IdealTemp.InsertIdealTemp(IdealTemp);
+                return Temp;
+            }
         }
-    }
-}
+    } }
+
