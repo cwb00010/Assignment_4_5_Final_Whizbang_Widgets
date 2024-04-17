@@ -1,6 +1,6 @@
-# Assignment_4_Whizbang_Widgets
+# Project Overall README
 
-## Application Pages/API's
+## Assignment 4 API's README
 
 ### 1. Add A Seed (`spInsertSeed`)
 
@@ -29,3 +29,13 @@ Similar to the Hurricane page, users can add a tornado to the application occurr
 ### 7. Weather Data (External API connecting Weather Info)
 
 An external API connects to the basic weather page to provide weather data and information for the area. Users can view the weather for the area similar to a normal weather app.
+
+## Assignment 5 Razor Pages README
+
+### 1. Privacy Page
+
+
+
+### 2. Users Page
+
+## Final Overall README
