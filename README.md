@@ -2,11 +2,11 @@
 
 ## Assignment 4 API's README
 
-### 1. Add A Seed (`spInsertSeed`)
+### 1. Add A Seed (`spInsertSeed`) (Will Bruton)
 
 This page allows users to input data about the seeds they use and observations regarding them. Users can provide a seed ID, seed name, and ideal planting temperature. They can also specify if the seed performs differently at various temperatures and provide other ideal temperatures for the seed.
 
-### 2. Find a User (`spGetUserDetailsByCity`)
+### 2. Find a User (`spGetUserDetailsByCity`) (Will Bruton)
 
 This page enables users to search for other users based on city. For example, users can search for farmers in Billings, Montana by inputting the city name and finding out what users are farming in that area.
 
