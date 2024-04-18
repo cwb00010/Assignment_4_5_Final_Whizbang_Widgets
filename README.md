@@ -4,11 +4,11 @@
 
 ### 1. Add A Seed (`spInsertSeed`) (Will Bruton)
 
-This page allows users to input data about the seeds they use and observations regarding them. Users can provide a seed ID, seed name, and ideal planting temperature. They can also specify if the seed performs differently at various temperatures and provide other ideal temperatures for the seed.
+This page allows users to input data about the seeds they use and observations regarding them. Users can provide a seed ID, seed name, and ideal planting temperature. They can also specify if the seed performs differently at various temperatures and provide other ideal temperatures for the seed. The output would be that a seed entity was created and added to the database. 
 
 ### 2. Find a User (`spGetUserDetailsByCity`) (Will Bruton)
 
-This page enables users to search for other users based on city. For example, users can search for farmers in Billings, Montana by inputting the city name and finding out what users are farming in that area.
+This page enables users to search for other users based on city. Users would perform this by adding in a CityID. The return would be UserID's, Usernames, and their farm type. For example, users can search for farmers in Billings, Montana by inputting the CityID and finding out what users are farming in that area.
 
 ### 3. Add a City (`spInsertCity`)(Austin Bartley)
 
@@ -32,10 +32,15 @@ An external API connects to the basic weather page to provide weather data and i
 
 ## Assignment 5 Razor Pages README
 
-### 1. Privacy Page
+### 1. Privacy Page (Will Bruton
+
+This page just provides a basic privacy policy for the site that users can have access to and read. Here users can be aware of the policy at all times and can protect both us and the user. 
 
 
+### 2. Users Page (Will Bruton)
 
-### 2. Users Page
+The goal of this page is to provide a page where users can look at a list of other users based on CityID, username, and farm type. Depending on the amount of users this lsit could be massive. The hope would be to add some sort of filter system for users to limit the results.
+
+
 
 ## Final Overall README
