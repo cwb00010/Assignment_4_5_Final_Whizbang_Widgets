@@ -10,11 +10,11 @@ This page allows users to input data about the seeds they use and observations r
 
 This page enables users to search for other users based on city. For example, users can search for farmers in Billings, Montana by inputting the city name and finding out what users are farming in that area.
 
-### 3. Add a City (`spInsertCity`)
+### 3. Add a City (`spInsertCity`)(Austin Bartley)
 
 Users can use this page to add a city that is not already in the system. For instance, a user living in ThatSmallTown, ZipCode, BigState, CoolCountry, can add their city into the system to provide more data for the site.
 
-### 4. Create a Profile (`spInsertUser`)
+### 4. Create a Profile (`spInsertUser`)(Austin Bartley)
 
 This page allows users to insert their details to create a profile for themselves within the application. They can create a username and provide details regarding their farm and location. Address-related information is only as specific as the city to protect users' privacy.
 
