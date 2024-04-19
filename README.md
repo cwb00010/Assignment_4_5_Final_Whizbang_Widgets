@@ -47,4 +47,13 @@ The goal of this page is to provide a page where users can look at a list of oth
 
 ### Deployment Guide
 
+#### SQL Server Management Studio
+
+Start by opening a new file in SQL Server Management Studio. From there go to this link (https://github.com/cwb00010/Assignment_3_WhizBang_Widgets/tree/main). Here you will find the code you need to create the database. You can either clone this repository or you can go individually and copy and paste over. You can start with DBCreation.sql followed by InsertDataClean. From there, you can go through each of the posted stored procedures. After completing these steps, you can move to visual studios to start creating the site itself. For any documentation on this section, check in the README file listed. It will give more details as to what the contents include.
+
+#### Visual Studios 2022
+
+Start by creating a new project in Visual Studios. Visual Studios will give you many of the basic pages and tools you need to start. From there go to this link (https://github.com/cwb00010/Homework2Bruton/tree/master/Homework2Bruton). In this repository, you will find the code needed to create the various pages like the home page. Along with those pages, you will have the basic starter pages that are provided in the initial creation of the project. Like in the previous section, there is a README that breaks down the various self-created pages, research, citations, and more for users to read. 
+
+From this point, you can start work on the API creation based on the stored procedures you created in SQL Server. To start, will create a joint project within the previous one you created. For example, the first project is called the FarmMaxSite. This next project is called FarmMaxSiteAPI. At this link (https://github.com/cwb00010/Assignment_4_5_Final_Whizbang_Widgets), you will find all of the final code you need to create your APIs along with any code needed to create your razor pages. Each of the developers worked on two of the API's and two razor pages. You will find their code in their respective folders. The README will also have documentation for the APIs and the pages. 
 
