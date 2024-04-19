@@ -42,6 +42,16 @@ This page just provides a basic privacy policy for the site that users can have 
 The goal of this page is to provide a page where users can look at a list of other users based on CityID, username, and farm type. Depending on the amount of users this lsit could be massive. The hope would be to add some sort of filter system for users to limit the results.
 
 
+### 3. Add City Page (Austin Bartley)
+
+This page allows users to add a city. It inludes a form with inpit fields for the city name, state, and country. After the fact it displays a message and re direts the user back to the same page.
+
+
+###4 Greetings page (Austin Bartley)
+
+This page is very simple. It greets the users with a message depending on the time of day. I wanted to add this to be more welcoming in our website.
+
+
 
 ## Final Overall README
 
