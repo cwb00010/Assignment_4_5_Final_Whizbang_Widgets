@@ -8,42 +8,37 @@ namespace FarmMaxSiteAPI.Controllers
     [ApiController]
     public class InsertSeedController : ControllerBase
     {
-        private readonly ISeedService _InsertID;
-        public InsertSeedController(ISeedService InsertID)
+        private readonly ISeedService _insertIDService;
+        private readonly ISeedService _insertNameService;
+        private readonly ISeedService _insertIdealTempService;
+
+        public InsertSeedController(ISeedService insertIDService, ISeedService insertNameService, ISeedService insertIdealTempService)
         {
-            _InsertID = InsertID;
+            _insertIDService = insertIDService;
+            _insertNameService = insertNameService;
+            _insertIdealTempService = insertIdealTempService;
         }
-        [HttpPost("{SeedID}")]
+
+        [HttpPost("ID/{SeedID}")]
         public async Task<ActionResult<List<Seed>>> InsertID(int SeedID)
         {
-            var insertID = await _InsertID.InsertID(SeedID);
+            var insertID = await _insertIDService.InsertID(SeedID);
             return insertID;
-
         }
 
-        private readonly ISeedService _InsertName;
-        public InsertNameController(ISeedService InsertName)
-        {
-            _InsertName = InsertName;
-        }
-        [HttpPost("{SeedName}")]
+        [HttpPost("Name/{SeedName}")]
         public async Task<ActionResult<List<Seed>>> InsertName(string SeedName)
         {
-            var seed = await _InsertName.InsertName(SeedName);
+            var seed = await _insertNameService.InsertName(SeedName);
             return seed;
         }
 
-        private readonly ISeedService _InsertIdealTemp;
-        public InsertIdealTempController(ISeedService InsertName)
+        [HttpPost("IdealTemp/{IdealTemp}")]
+        public async Task<ActionResult<List<Seed>>> InsertTemp(string IdealTemp)
         {
-            _InsertIdealTemp = InsertIdealTemp;
-
-            [HttpPost("{IdealTemp}")]
-            public static async Task<ActionResult<Seed>> InsertIdealTemp(string IdealTemp)
-            {
-                var IdealTemp = await _IdealTemp.InsertIdealTemp(IdealTemp);
-                return Temp;
-            }
+            var IdealPlantTemp = await _insertIdealTempService.InsertTemp(IdealTemp);
+            return IdealPlantTemp;
         }
-    } }
 
+    }
+}
