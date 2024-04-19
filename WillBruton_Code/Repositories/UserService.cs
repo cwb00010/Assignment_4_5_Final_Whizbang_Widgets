@@ -20,4 +20,3 @@ namespace FarmMaxSiteAPI.Repositiories
         }
     }
 }
-       
