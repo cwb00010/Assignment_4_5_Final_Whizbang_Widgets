@@ -1,0 +1,24 @@
+@page "/addcity"
+@model AddCityModel
+@using FarmSite2API.Entities
+
+<h1>Add City</h1>
+
+<form method="post">
+    <label for="cityName">City Name:</label>
+    <input type="text" id="cityName" name="CityName" required><br>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="State" required><br>
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="Country" required><br>
+
+    <button type="submit">Add City</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <div>@Model.Message</div>
+}
+
