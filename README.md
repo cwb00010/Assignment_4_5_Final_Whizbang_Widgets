@@ -45,6 +45,10 @@ The goal of this page is to provide a page where users can look at a list of oth
 
 ## Final Overall README
 
+### Description
+
+This application aims to establish a platform where farmers can access weather forecasts, climate patterns, and planting advice. Additionally, it facilitates content generation through forum posts and enables users to contribute new data to the site's database. The aim is to develop a nationwide, and eventually global, community where farmers can engage with one another and swiftly access pertinent information.
+
 ### Deployment Guide
 
 #### SQL Server Management Studio
@@ -55,5 +59,16 @@ Start by opening a new file in SQL Server Management Studio. From there go to th
 
 Start by creating a new project in Visual Studios. Visual Studios will give you many of the basic pages and tools you need to start. From there go to this link (https://github.com/cwb00010/Homework2Bruton/tree/master/Homework2Bruton). In this repository, you will find the code needed to create the various pages like the home page. Along with those pages, you will have the basic starter pages that are provided in the initial creation of the project. Like in the previous section, there is a README that breaks down the various self-created pages, research, citations, and more for users to read. 
 
-From this point, you can start work on the API creation based on the stored procedures you created in SQL Server. To start, will create a joint project within the previous one you created. For example, the first project is called the FarmMaxSite. This next project is called FarmMaxSiteAPI. At this link (https://github.com/cwb00010/Assignment_4_5_Final_Whizbang_Widgets), you will find all of the final code you need to create your APIs along with any code needed to create your razor pages. Each of the developers worked on two of the API's and two razor pages. You will find their code in their respective folders. The README will also have documentation for the APIs and the pages. 
+From this point, you can start work on the API creation based on the stored procedures you created in SQL Server. To start, will create a joint project within the previous one you created. For example, the first project is called the FarmMaxSite. This next project is called FarmMaxSiteAPI. At this link (https://github.com/cwb00010/Assignment_4_5_Final_Whizbang_Widgets), you will find all of the final code you need to create your APIs along with any code needed to create your razor pages. Like before, it will contain code that will be provided upon creation.  Each of the developers worked on two of the API's and two razor pages. You will find their code in their respective folders. The data, entities, controllers, properties, razor pages, and repositories need to be created yourself using C#. The order is not as important as long as all these pages are connected correctly. The README will also have documentation for the APIs and the pages. 
 
+#### Short Falls to Avoid | Need to Know
+
+When creating this make sure you maintain organization within your projects. This will make creation easier along with easier navigation among your code. If working with others, make sure you have consistent communication among your other developers. Try to make sure all your code is unified and similar in coding style. Also, know that this is a major work in progress. It does not work perfectly and still throws errors here and there throughout. Everything prior to API creation should be in good shape. After that, there was trouble with API creation and coding after. 
+
+### Contact Info
+
+We are more than happy to answer any questions in regards to the applications and its coding. 
+To contact us please reach out at these emails:
+Will Bruton|cwb00010@mix.wvu.edu
+Austin Bartely|agb00017@mix.wvu.edu
+Dylan Bryson|db00069@mix.wvu.edu
