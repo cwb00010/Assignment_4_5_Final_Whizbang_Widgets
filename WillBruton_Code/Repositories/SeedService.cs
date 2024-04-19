@@ -29,24 +29,9 @@ namespace FarmMaxSiteAPI.Repositiories
 
 
 
-        public async Task<List<Seed>> InsertPlantTemp(string IdealPlantTemp)
+        public async Task<List<Seed>> InsertTemp(string IdealPlantTemp)
         {
             var param = new SqlParameter("@IdealPlantTemp", IdealPlantTemp);
             var SeedDetails = await Task.Run(() => _dbContextClass.Seed.FromSqlRaw("exec spInsertSeed @IdealPlantTemp", param).ToListAsync());
             return SeedDetails;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-    }
