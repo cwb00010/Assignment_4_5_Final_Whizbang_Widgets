@@ -32,7 +32,7 @@ An external API connects to the basic weather page to provide weather data and i
 
 ## Assignment 5 Razor Pages README
 
-### 1. Privacy Page (Will Bruton
+### 1. Privacy Page (Will Bruton)
 
 This page just provides a basic privacy policy for the site that users can have access to and read. Here users can be aware of the policy at all times and can protect both us and the user. 
 
