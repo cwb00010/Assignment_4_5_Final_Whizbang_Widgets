@@ -1,0 +1,33 @@
+@page
+@model GreetingsModel
+@{
+    ViewData["Title"] = "Greetings";
+}
+
+<h1>Greetings</h1>
+
+@Model.Message
+
+@functions {
+    public class GreetingsModel
+    {
+        public string Message { get; set; }
+
+        public void OnGet()
+        {
+            var currentTime = DateTime.Now;
+            if (currentTime.Hour < 12)
+            {
+                Message = "Good morning!";
+            }
+            else if (currentTime.Hour < 18)
+            {
+                Message = "Good afternoon!";
+            }
+            else
+            {
+                Message = "Good evening!";
+            }
+        }
+    }
+}
